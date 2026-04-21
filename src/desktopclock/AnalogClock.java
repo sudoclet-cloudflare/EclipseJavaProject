@@ -84,8 +84,7 @@ public class AnalogClock extends JPanel {
     }
 
     // Helper function that draws a single clock hand
-    private void drawHand(Graphics2D g2, int x, int y,
-                          double angle, int length, int thickness) {
+    private void drawHand(Graphics2D g2, int x, int y, double angle, int length, int thickness) {
 
         // Compute the end point of the hand using basic trigonometry
         int xEnd = x + (int) (Math.cos(angle) * length);
