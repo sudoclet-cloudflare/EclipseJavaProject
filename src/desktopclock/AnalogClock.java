@@ -43,7 +43,8 @@ public class AnalogClock extends JPanel {
     private static final int SECOND_HAND_THICKNESS = 2;
 
     private static final double NUMERAL_RADIUS_RATIO   = 0.80;
-    private static final double LONG_TICK_START_RATIO  = 0.82;
+//    private static final double LONG_TICK_START_RATIO  = 0.82;
+    private static final double LONG_TICK_START_RATIO  = 0.89;
     private static final double SHORT_TICK_START_RATIO = 0.90;
     private static final double TICK_END_RATIO         = 0.97;
 
