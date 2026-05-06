@@ -333,8 +333,9 @@ public class AnalogClock extends JPanel {
         int second = now.getSecond();
 
         double secondAngle = Math.toRadians(second * 6.0 - 90.0);
-        double minuteAngle = Math.toRadians(minute * 6.0 - 90.0);
-        double hourAngle = Math.toRadians((hour + minute / 60.0) * 30.0 - 90.0);
+        double minuteWithSeconds = minute + second / 60.0;
+        double minuteAngle = Math.toRadians(minuteWithSeconds * 6.0 - 90.0);
+        double hourAngle = Math.toRadians((hour + minuteWithSeconds / 60.0) * 30.0 - 90.0);
 
         drawHand(g2, hourAngle, (int) (radius * HOUR_HAND_LENGTH_RATIO), HOUR_STROKE, Color.BLACK);
         drawHand(g2, minuteAngle, (int) (radius * MINUTE_HAND_LENGTH_RATIO), MINUTE_STROKE, Color.BLACK);
